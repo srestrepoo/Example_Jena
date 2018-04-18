@@ -2,7 +2,6 @@ package ejemplosAPI;
 
 import org.apache.jena.query.*;
 import org.apache.jena.rdf.model.Literal;
-import java.util.*;
 import virtuoso.jena.driver.*;
 
 public class VirtuosoSPARQLExample1 {
@@ -27,7 +26,7 @@ public class VirtuosoSPARQLExample1 {
             QuerySolution soln = results.nextSolution();
             Literal zona = soln.getLiteral("zona");
             Literal ciudad = soln.getLiteral("municipio");
-            System.out.println(zona);
+            System.out.println(zona + " " + ciudad);
 		}
 //		try {
 //			ResultSet results = vqe.execSelect();
